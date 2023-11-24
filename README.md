@@ -20,31 +20,7 @@ Following (association table)
 - following_user_id (FK user.id)
 
 
-## Use Case
 
-1. Registration
-
-```
-User(username=username, password=password, bio=bio)
-```
-
-2. Login
-
-```
-User.query.filter(username=username)
-```
-
-
-3. Following API
-```
-# check record existence
-Following.query.filter(user_id=user_id, follower_user_id=follower_user_id)
-
-# create if not exist
-Following(user_id, user_id_to_follow)
-
-# delete
-db.session.delete()
 ```
 
 
