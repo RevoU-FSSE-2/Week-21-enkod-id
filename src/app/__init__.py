@@ -19,5 +19,5 @@ app.register_blueprint(job_blueprint, url_prefix="/job")
 def health_check():
     return "OK", 200
 
-# with app.app_context():
-#     db_init()
+with app.app_context():
+    db_init()
