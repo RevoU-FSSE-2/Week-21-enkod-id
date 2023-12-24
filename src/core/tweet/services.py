@@ -17,3 +17,6 @@ class TweetService():
     
     def get_all(self):
         return self.tweet_accessor.get_all()
+
+    def get_by_id(self, tweet_id: int):
+        return self.tweet_accessor.get_by_id(tweet_id)
